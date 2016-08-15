@@ -1,0 +1,33 @@
+INFO:11个Proposer, 11个Acceptor准备进行Paxos
+每个Proposer独立线程，Acceptor不需要线程
+Proposer线程中等待随机时间:表示与Acceptor的通信时间
+Proposer线程中调用Acceptor.Proposed()表示拿到了Propose请求结果
+Proposer线程中调用Acceptor.Accepted()表示拿到了Accept请求结果
+Proposer被批准后结束线程,其它线程继续投票最终，全部批准相同的值，达成一致。
+
+
+INFO:Paxos开始
+INFO:Proposer2号批准了提议,用时104432MS:最终提议 = [编号:57，提议:2]
+
+INFO:Proposer4号批准了提议,用时246304MS:最终提议 = [编号:136，提议:2]
+
+INFO:Proposer0号批准了提议,用时303898MS:最终提议 = [编号:165，提议:2]
+
+INFO:Proposer6号批准了提议,用时423811MS:最终提议 = [编号:226，提议:2]
+
+INFO:Proposer5号批准了提议,用时438973MS:最终提议 = [编号:236，提议:2]
+
+INFO:Proposer7号批准了提议,用时504897MS:最终提议 = [编号:271，提议:2]
+
+INFO:Proposer3号批准了提议,用时523306MS:最终提议 = [编号:278，提议:2]
+
+INFO:Proposer8号批准了提议,用时568801MS:最终提议 = [编号:305，提议:2]
+
+INFO:Proposer10号批准了提议,用时619305MS:最终提议 = [编号:318，提议:2]
+
+INFO:Proposer9号批准了提议,用时631440MS:最终提议 = [编号:328，提议:2]
+
+INFO:Proposer1号批准了提议,用时654209MS:最终提议 = [编号:331，提议:2]
+
+INFO:Paxos完成，用时654211MS
+
