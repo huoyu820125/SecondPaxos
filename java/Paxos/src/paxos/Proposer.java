@@ -113,6 +113,7 @@ public class Proposer {
                 startPropose(mValue);
                 return false;
             }
+            return true;
         }
 
         mOkCount++;

@@ -98,6 +98,7 @@ bool Proposer::Accepted(bool ok)
 			StartPropose(m_value);
 			return false;
 		}
+		return true;
 	}
 
 	m_okCount++;
